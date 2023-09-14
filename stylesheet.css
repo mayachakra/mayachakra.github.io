@@ -23,16 +23,16 @@ table{
 
 
 a:link{
-    color: palevioletred;
+    color: rgb(165, 52, 89);
 }
 
 a:visited{
-    color:black;
+    color: teal;
 }
 
     .header{
     float: left;
-    color: black;
+    color: #f8b195;
     text-align: center;
     padding: 10px;
     text-decoration: none;
@@ -40,16 +40,28 @@ a:visited{
     line-height: 25px;
     border-radius: 5px;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
-    
+    background-color: #c06c84;
+
+
+  }
+  .header-border{
+    border-radius: 30%;
   }
 
   .head-right a:hover {
     color: hotpink;
   }
+  .head-right{
+    overflow: hidden;
+    background-color: #c06c84;
+  }
 
-
+.head-right a{
+  float:left;
+  padding: 14px 16px;
+}
   .head-right {
     float: right;
     text-decoration: none;
@@ -75,7 +87,14 @@ a:visited{
     .header-right {
       float: none;
     }
+
+    .parent{
+      margin-top: 200px;
+    }
   }
+add margin top changes here so it only happens on a different device
+
+
 
 head{
     text-align: center;
@@ -89,19 +108,25 @@ body{
   h1{
     font-size: 45px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 
   }
   h2{
     display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: #6c5b7b;
   }
- 
+  .title{
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
 
   h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color:black;
+    color:#355c7d;
     opacity:75%;
     
 
@@ -136,8 +161,6 @@ body{
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 250px 1fr;
-    position: relative;
-    left:100px;
   }
  
   
@@ -149,4 +172,8 @@ body{
   }
 
   
+  .parent {
+    position: relative;
+    left:100px;
+  }
 
