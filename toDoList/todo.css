@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:25;
+    background-color: pink;
+    display:grid;
+    grid: "header header header header" auto "LISTS ACTIVE" auto/1fr minmax(100px,300px) minmax(250px,500px) 1fr;
+}
+p{
+    text-align: center;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.todo-tasks{
+    width: 100%;
+    margin: 100px;
+    border-radius:15px;
+    padding: 40px 25px 75px;
+
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    flex:1;
+    border:none;
+    outline:black;
+    font-weight: 10px;
+    padding:10px;
+
+}
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    font-weight: 15px;
+    padding:15px;
+
+}
+
+button{
+   border:none;
+   outline:none;
+   padding:15px; 
+   cursor:pointer;
+   font-size: 15px;
+   padding: 15px 50px;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+ol li{
+    list-style: none;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ol li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width:25px;
+    background-image: url(images/unchecked.jpeg);
+}
+
+
+ol li.checked{
+    color: red;
+    text-decoration: line-through;
+    background-image: url(images/checked.jpeg);
+}
+h2{
+    text-align: center;
+}
+
