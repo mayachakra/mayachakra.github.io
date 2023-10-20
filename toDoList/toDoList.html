@@ -10,70 +10,39 @@
 <body>
 <div class="container">
     <div class="todo-tasks">
-        <h2 class = "task-list-title">To Do List</h2>
-        <p>Click on task to cross off and the checkbox to complete!</p>
+
+        <h1 class = "task-list-title">To Do List</h1>
+        <br>
+
+        <p>Press the + button on the right-hand side to add a task.</p>
+        <p>Click on task to cross off, the x to remove a task, and the checkbox to complete!</p>
+        <p>Refresh the page to restart your list.</p>
+        <br>
         <div class = "row">
+
+        <label for="cars">Priority:</label>
+
+    
+<select name="priority" id="priority">
+  <option value="high-priority">High</option>
+  <option value="medium-priority">Medium</option>
+  <option value="low-priority">Low</option>
+</select>
             <input type="text" id = "text-box" placeholder = "new task">
-            <button onclick="addTask()">+</button>
+            <button id="task-submit">+</button>
             <br>
         </div>    
-        <ol id="task-title">
-        <li>
-            <checkbox id="task-priority"> </checkbox>
-        </li>
-    
-        </ol>
+<ol>
+    <li>
+        <div id = "tasks">
+
+        </div>
+    </li>
+</ol>
     </div>
-
-
-
-
-title priority status for tasks
-
-<!--
-    NEED:
-    task-title: which is a one-line description of the task
-task-priority: which can be one of low-, medium- or high-priority.
-task-status: Which can be, either completed, or pending
-
-Your HTML page should provide a form to allow the user to specify the details 
-of a new task (i.e. task-title, as text; task-priority, as a select tag; and a 
-task-status as a radio button selection), and a submit button.
-
-    ---->
 
 
 </div>
 
-
-
-
 </body>
 </html>
-
-<!--
-let doSomething =  (myArray,f) =>{
-
-    let modArray = []
-
-    for (let i=0; i<myArray.length; i++){
-        modArray.push(f(myArray[i]))
-        //console.log(myArray[i]);
-    }
-
-    return modArray;
-
-
-}
-
-let m = [1,2,3,4,5];
-console.log(doSomething(m,bArrow));
-
-
-
-
-
-
-
-
--->
