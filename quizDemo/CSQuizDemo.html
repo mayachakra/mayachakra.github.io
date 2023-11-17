@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Computer Science Quiz
+        </title> 
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=2.5">
+        <script src="quizDemo.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+        </head>
+
+    <body>
+    <h4>Welcome to the CS Quiz!</h4>
+
+    <form id="name-form">
+        <label for="name-input">Please enter your name:</label>
+        <input type="text" id="name-input" required>
+        <button type="submit">submit</button>
+    </form>
+
+    <div id="customViews"> 
+
+
+    </div>
+    <div id="welcome-container"></div>
+    <h1 id="quiz-title"></h1>
+    <div id="question-container"></div>
+    <div id="choices-container"></div>
+    <div id="results-container"></div>
+
+</body>
+
+
+
+<script id="welcome-template" type="text/x-handlebars-template">
+    <p>Welcome, {{name}}! Let's get started!</p>    
+    <p>Please select a quiz below:</p>
+    <div id="quiz-options">
+    <input type="radio" id="lang" name="fav_language" value="HTML" class="language">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="lang" name="fav_language" value="Java" class="language">
+    <label for="java">Java</label><br>
+    </div>
+    <button id="next">next</button>
+    </script>
+
+<script id="question-template" type="text/x-handlebars-template">
+    <p>{{question}}</p>    
+    </script>
+    <script id="choices-template" type="text/x-handlebars-template">
+         {{#each choice}} 
+        <input type="radio" name="answer" value="{{this}}">{{this}}<br>
+        {{/each}} 
+        <button onclick="nextQuestion()" id="answered" name="answered" value="answered">-></button>
+    </script>
+
+</html>
