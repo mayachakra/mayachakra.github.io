@@ -1,3 +1,15 @@
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/quizDemo',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  },
+}
+
 const nameForm = document.getElementById("name-form");
 const nameEntered = document.getElementById("name-input");
 let NAME = "";
