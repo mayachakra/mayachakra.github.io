@@ -6,6 +6,8 @@
        <title>Maya Juthika Chakravarty</title>
        <link rel="stylesheet" href="style.css">
        <script src = "style.js" defer></script>
+       <script src="https://web3forms.com/client/script.js" async defer></script>
+
     </head>
  <body>
     <div id="header">
@@ -213,20 +215,18 @@
                      <h1 class="subtitle"><strong>Contact Me</strong></h1>
                      <h3>If you would like to reach out you may fill out the form below to send an email! </h3>
                      <div class="emails">
-                         <form action="malito:mayajchakravarty@gmail.com" method="post" enctype="text/plain">
-                             <label for="name">Enter name:</label>
-                             <input type="text" id="name" name="name" required>
 
-                             <label for="email">Enter email:</label>
-                             <input type="email" id="email" name="email" required>
-
-                             <label for="message">Message:</label>
-                             <textarea type="message" id="message" name="message" required></textarea>
-
-                             <input type="submit" value="Send Email" onclick="submitForm()">
-                             <!--should work once deployed on internet, test once on domain-->
-                         </form>
-                        
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="8a4c1186-cf94-4029-9501-88c1b0c83d77">
+                            <label for="name">Enter name:</label>
+                            <input type="text" name="name" required>
+                            <label for="email">Enter email:</label>
+                            <input type="email" name="email" required>
+                            <label for="message">Enter message:</label>
+                            <textarea name="message" required></textarea>
+                            <button type="submit">Submit Form</button>
+                        </form>
+                                        
                     </div>
 
                 </div>
