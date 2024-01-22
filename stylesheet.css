@@ -1,192 +1,245 @@
-.container{
-  width: auto;
-  height: auto;
-  background-image: -moz-linear-gradient(rgba(0,0,0,0.5),
-  rgba(0,0,0,0.5),
-  url(background.png));
-  padding: 3px;
-  display: grid;
-  grid-gap: 2em;
-  overflow: auto;
+#header{
+    background-image: url(maya.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
 
 }
-h4{
-  font-size: large;
-}
-table, th, td{
-  border: 1px solid;
-}
-
-table{
-  width:100%;
-}
-
-
-a:link{
-  color: rgb(165, 52, 89);
-}
-
-a:visited{
-  color: teal;
-}
-
-  .header{
-  float: left;
-  color: #f8b195;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 50px;
-  line-height: 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
-  background-color: #c06c84;
-
-
-}
-.header-border{
-  border-radius: 30%;
-}
-
-.head-right a:hover {
-  color: hotpink;
-}
-.head-right{
-  overflow: hidden;
-  background-color: #c06c84;
-}
-
-.head-right a{
-float:left;
-padding: 14px 16px;
-}
-.head-right {
-  float: right;
-  text-decoration: none;
-  font-size: 25px;
-
-}
-
-
-.header a.maya {
-  font-weight: bold;
-  font-size: 45px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
+ul li{
+    color: bisque;
     text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-
-  .parent{
-    margin-top: 200px;
-  }
-}
-add margin top changes here so it only happens on a different device
-
-
-
-head{
-  text-align: center;
-}
-body{
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-attachment: fixed;
-  font-family: 'Poppins', sans-serif;
-  
-}
-h1{
-  font-size: 45px;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-
-}
-h2{
-  display: inline-block;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: xx-large;
-  color: #6c5b7b;
-}
-.title{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-h3{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  color:#355c7d;
-  opacity:75%;
-  
-
+    font-size: large;
 }
 p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: left;
+    color: burlywood;
+    font-style: italic;
+}
+h3{
+    color: burlywood;
+    font-weight: 200;
+}
+h1{
+    color: bisque;
+}
+.logo{
+    width:150px;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+body{
+background-color: black;
 }
 
-li{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
-  margin-right:10px;
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
-ul {
-  list-style-type: none;
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
 }
-
-img{
-    width:200px;
-    height:250px;
+nav ul li a:hover {
+color:rgb(149, 104, 53);
+font-size: x-large;
 }
-
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+span{
+    color:rgb(216, 165, 98);
 }
-
-
-.parent {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: 250px 1fr;
+.header-text{
+    margin-top:15%;
+    font-size: 25px;
 }
-
-
-.child {
-  position: absolute;
-  top: 0;
-  left: 500px;
-  text-align: left;
+.header-text h1{
+    margin-top: 0%;
+    margin-right:50%;
+    font-size: 50px;
 }
-
-
-.parent {
-  position: relative;
-  left:100px;
-}
-
-.carousel{
-align-items: center;
-width: 250px;
-height: 200px;
+#aboutme{
+    padding: 80px 0;
+    color: lightgray;
 
 }
-.carousel-inner > .item > img {
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis:25%;
+    margin-top: 10%;
+}
+.col-2{
+    flex-basis: 65%;
+    margin-top: 10%;
 
 }
-.container-fluid{
-  text-align: left;
+.col-1 img{
+    border-radius: 10px;
+    width:100%;
+}
+.subtitle{
+    font-size: 50px;
+    font-weight: 500;
+    color:lightgrey;
+}
+/*tabs*/
+.tabs{
+    display:flex;
+    margin: 25px 0 50px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content:'';
+    width:0;
+    height:2px;
+    position: absolute;
+    background: burlywood;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width:50%
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+/*skills*/
+#skills{
+    padding: 30px 0;
+}
+
+.content{
+    border: 1px solid burlywood;
+    border-radius: 10px;
+    margin:10px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgb(146, 105, 51);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+
+
+/*cards*/
+.innercard{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.content.flipped .innercard{
+    transform: rotateY(180deg);
+}
+
+.frontcard,
+.backcard{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.frontcard{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backcard{
+    transform: rotateY(180deg);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-sect{
+    text-align: center;
+    margin-top: 150px;
+}
+.intro-text{
+    text-align: center;
+    margin-bottom: -125px;
+}
+a:link{
+    text-decoration: none;
+    color: bisque;
+    transition: transform 0.3s ease-in-out;
+}
+a:visited{
+    color: burlywood;
+}
+.socials li:hover{
+    font-size: x-large;
+}
+form{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+label{
+    display:block;
+}
+
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:16px;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: burlywood;
+}
+
+button:hover{
+    background-color: bisque;
+}
+.content:hover{
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.container{
+    margin-bottom: -5%;
 }
