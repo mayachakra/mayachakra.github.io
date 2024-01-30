@@ -1,16 +1,16 @@
-/*
-function opentab(tabcontent){
-var tabcontainer = document.querySelectorAll('.tab-contents');
-   tabcontainer.forEach(function (element){
-    element.style.display = 'none';
-   });
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=>{
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
 
-   var selected = document.getElementById(tabcontent);
-   if(selected){
-       selected.style.display = 'block';
-   }
-}
-*/
 function toggleCard(content){
     content.classList.toggle('flipped');
 }
@@ -42,21 +42,3 @@ document.querySelectorAll('nav a').forEach(anchor=>{
         });
     });
 });
-
-
-/*
-FIX THE LOCATIONS OF ALL THE CODE
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }  
-    for(tablink of tabcontents){
-        tablink.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-link");
-}
-*/
