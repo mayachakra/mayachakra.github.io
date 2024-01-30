@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Playfair+Display:wght@500&display=swap');
 #header{
     /*background-image: url(maya.jpg);
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;*/ 
     background-size: cover;
     background-position: center;
     height:125vh;
