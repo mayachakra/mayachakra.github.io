@@ -1,37 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Playfair+Display:wght@500&display=swap');
 #header{
-    /*background-image: url(maya.jpg);*/
+    /*background-image: url(maya.jpg);
+    background-repeat: no-repeat;*/
     background-size: cover;
     background-position: center;
-    height:100vh;
+    height:125vh;
+    background-color: #E0D0C1;
+}
+
+
+.hidden{
+    opacity: 0;
+    filter:blur(2px);
+    transition: all 2s;
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition:none;
+    }
+}
+.show{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+}
+
+ul li{
+    color: #3c2017;
+    text-align: left;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-ul li{
-    color: bisque;
-    text-align: left;
-    font-size: large;
-}
 p{
-    color: burlywood;
+    color: #3c2017;
     font-style: italic;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 h3{
-    color: burlywood;
+    color: #3c2017;
     font-weight: 200;
 }
+
 h1{
-    color: bisque;
-}
+    color: #3c2017;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Playfair Display', serif;}
 .logo{
-    width:150px;
+    width:200px;
 }
 nav{
     display:flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 body{
-background-color: #1a1a1a;
+background-color: #d8c7b8;
+margin:20px;
+background-repeat:no-repeat;
 }
 
 nav ul li{
@@ -40,30 +69,31 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: aliceblue;
+    color: #62472e;
     text-decoration: none;
     font-size: 20px;
 }
 nav ul li a:hover {
-color:rgb(149, 104, 53);
+color: #b79576;
 font-size: x-large;
 }
 span{
-    color:rgb(216, 165, 98);
+    color: #775144;
 }
 .header-text{
-    margin-top:15%;
+    margin-top:10%;
     font-size: 25px;
 }
 .header-text h1{
-    margin-top: 0%;
-    margin-right:50%;
+
     font-size: 50px;
 }
 #aboutme{
     padding: 80px 0;
-    color: lightgray;
-
+    color: #A44A3F;
+}
+#aboutme .subtitle{
+    text-align: center;
 }
 .row{
     display:flex;
@@ -71,13 +101,14 @@ span{
     flex-wrap: wrap;
 }
 .col-1{
-    flex-basis:25%;
+    flex-basis:50%;
     margin-top: 10%;
+    margin-bottom: 5%;
 }
 .col-2{
-    flex-basis: 65%;
+    flex-basis: 50%;
     margin-top: 10%;
-
+    margin-bottom: 5%;
 }
 .col-1 img{
     border-radius: 10px;
@@ -86,7 +117,7 @@ span{
 .subtitle{
     font-size: 50px;
     font-weight: 500;
-    color:lightgrey;
+    color: #3c2017;
 }
 /*tabs*/
 .tabs{
@@ -105,7 +136,7 @@ span{
     width:0;
     height:2px;
     position: absolute;
-    background: burlywood;
+    background: #775144;
     bottom: -5px;
     left: 0;
     transition: 0.5s;
@@ -133,7 +164,7 @@ span{
 }
 
 .content{
-    border: 1px solid burlywood;
+    border: 1px solid #3c2017;
     border-radius: 10px;
     margin:10px;
     height: 200px;
@@ -194,14 +225,11 @@ span{
 }
 a:link{
     text-decoration: none;
-    color: bisque;
+    color: #62472e;
     transition: transform 0.3s ease-in-out;
 }
 a:visited{
-    color: burlywood;
-}
-.socials li:hover{
-    font-size: x-large;
+    color: #3c2017;
 }
 form{
     padding: 20px;
@@ -209,6 +237,8 @@ form{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 400px;
     width: 100%;
+    color: #b79576;
+    margin: 0 auto;
 }
 
 label{
@@ -224,15 +254,17 @@ input,textarea{
     border-radius: 4px;
 }
 
+
 button{
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
-    background-color: burlywood;
+    background-color: #b79576;
+
 }
 
 button:hover{
-    background-color: bisque;
+    background-color: #62472e;
 }
 .content:hover{
     transform: translateY(-10px);
@@ -242,4 +274,24 @@ button:hover{
 
 .container{
     margin-bottom: -5%;
+}
+
+label{
+    color:#62472e;
+}
+
+#skills{
+    text-align: center;
+}
+
+#experience{
+    text-align: center;
+}
+
+#socials{
+    text-align: center;
+}
+
+#contactme{
+    text-align: center;
 }
