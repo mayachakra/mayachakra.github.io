@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Playfair+Display:wght@500&display=swap');
 #header{
     /*background-image: url(maya.jpg);
-    background-repeat: no-repeat;*/ 
+    background-repeat: no-repeat;*/
     background-size: cover;
     background-position: center;
     height:125vh;
     background-color: #E0D0C1;
 }
-
 
 .hidden{
     opacity: 0;
@@ -42,7 +41,13 @@ h3{
     color: #3c2017;
     font-weight: 200;
 }
-
+h4{
+    color: #3c2017;
+    font-weight: 200;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 h1{
     color: #3c2017;
     font-family: 'DM Sans', sans-serif;
@@ -62,20 +67,37 @@ background-color: #d8c7b8;
 margin:20px;
 background-repeat:no-repeat;
 }
-
+h5{
+    font-size: larger;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    transition: color 0.3s ease;
 }
 nav ul li a{
     color: #62472e;
     text-decoration: none;
     font-size: 20px;
+    transition: color 0.3s ease;
 }
 nav ul li a:hover {
-color: #b79576;
-font-size: x-large;
+    color: #b79576;
+    font-size: x-large;
+    transition: font-size 0.3s ease;
+
+}
+
+#experience strong{
+    color: #62472e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+#experience strong:hover{
+    color: #b79576;
+    transition: color 0.3s ease;
+
 }
 span{
     color: #775144;
@@ -85,7 +107,6 @@ span{
     font-size: 25px;
 }
 .header-text h1{
-
     font-size: 50px;
 }
 #aboutme{
@@ -177,8 +198,10 @@ span{
 
 .cardcontainer{
     display: flex;
-    justify-content: space-between;
-    padding:20px;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 
@@ -237,7 +260,7 @@ form{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 400px;
     width: 100%;
-    color: #b79576;
+    background-color:  #E0D0C1;
     margin: 0 auto;
 }
 
@@ -259,12 +282,12 @@ button{
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
-    background-color: #b79576;
+    background-color: #c3ae98;
 
 }
 
 button:hover{
-    background-color: #62472e;
+    background-color: #9b7450;
 }
 .content:hover{
     transform: translateY(-10px);
